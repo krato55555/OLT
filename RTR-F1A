@@ -1,0 +1,1422 @@
+login as: nocjms
+Keyboard-interactive authentication prompts from server:
+End of keyboard-interactive prompts from server
+Pre-authentication banner message from server:
+|
+| Warning: Negotiated key exchange algorithm is not safe. It is recommended tha
+> t you disable the insecure algorithm or upgrade the client.
+End of banner message from server
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v23.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to nocjms@10.148.1.13                                  │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✗  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+Info: The max number of VTY users is 21, the number of current VTY users online is 1, and total number of terminal users online is 1.
+      The current login time is 2024-05-16 10:26:08+07:00.
+      The last login time is 2024-05-16 10:23:58+07:00 from 10.119.2.1 through SSH.
+Warning: The password of the root account is the default password. Please change the password.
+<JKT-03-1-RTR1-ASG_TOWER-M14>sy
+<JKT-03-1-RTR1-ASG_TOWER-M14>sys
+Enter system view, return user view with return command.
+[~JKT-03-1-RTR1-ASG_TOWER-M14]vsi
+[~JKT-03-1-RTR1-ASG_TOWER-M14]vsi 172
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]disp
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]display thi
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]display this
+#
+vsi 172
+ description OAM-BACKUP-MIKROTIK-TKO
+ pwsignal ldp
+  vsi-id 172
+  peer 10.148.1.11
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+return
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]pws
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]pwsignal ldp
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]pwsignal ldp
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]pee
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]peer 10.148.1.15
+[*JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]qui
+[*JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]commi
+[*JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]commit
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]qui
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172-ldp]quit
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]qui
+[~JKT-03-1-RTR1-ASG_TOWER-M14-vsi-172]quit
+[~JKT-03-1-RTR1-ASG_TOWER-M14]disp
+[~JKT-03-1-RTR1-ASG_TOWER-M14]display int
+[~JKT-03-1-RTR1-ASG_TOWER-M14]display interface desc
+[~JKT-03-1-RTR1-ASG_TOWER-M14]display interface description
+PHY: Physical
+*down: administratively down
+^down: standby
+(l): loopback
+(s): spoofing
+(E): E-Trunk down
+(b): BFD down
+(B): Bit-error-detection down
+(e): ETHOAM down
+(d): Dampening Suppressed
+(p): port alarm down
+(ld): loop-detect trigger down
+(c): CFM down
+Interface                     PHY     Protocol Description
+100GE0/7/0(40G)               up      up       to-FB-SW2-ASG_TOWER-100GE0/0/5
+100GE0/7/0.33(40G)            up      up       OAM-recti
+100GE0/7/0.34(40G)            up      up       OAM-IBMC
+100GE0/7/0.35(40G)            up      up       OAM-NCE
+100GE0/7/0.36(40G)            up      up       OAM-ZENICONE
+100GE0/7/0.49(40G)            up      up       OAM-SW
+100GE0/7/0.50(40G)            up      up       OAM-OLT
+100GE0/7/0.51(40G)            up      up       OAM-BACKUP
+100GE0/7/0.123(40G)           *down   down     test-qinq
+100GE0/7/0.124(40G)           up      up       qinq2
+100GE0/7/0.172(40G)           up      up       OAM-BACKUP-MIKROTIK-TKO
+100GE0/7/0.291(40G)           up      up       RO-MG-CBN
+100GE0/7/0.412(40G)           up      up       XL-4G-L1800
+100GE0/7/0.413(40G)           up      up       XL-4G-L2100
+100GE0/7/0.561(40G)           up      up       OAM-ONU
+100GE0/7/0.901(40G)           up      up       CBN-BROADBAND
+100GE0/7/0.904(40G)           up      up       SF
+100GE0/7/0.905(40G)           up      down
+100GE0/7/0.907(40G)           up      up       OSAKA-HOTEL
+100GE0/7/0.908(40G)           up      up       Tzu-Chi-Clinic-AKIHABARA-lt.dasar
+100GE0/7/0.911(40G)           up      up       Sari-Coffee-(Starbucks)
+100GE0/7/0.912(40G)           up      up       CBN-KOPKEN
+100GE0/7/0.913(40G)           up      up       CBN-CAF_Le_Bay
+100GE0/7/0.914(40G)           up      up       Tzu-Chi-Hospital
+100GE0/7/0.915(40G)           up      up       XL-QINQ
+100GE0/7/0.916(40G)           up      up       IOH-CYBER
+100GE0/7/0.918(40G)           up      up       SUBWAY-PIK2-Centerpoints
+100GE0/7/0.922(40G)           up      up       WAHANA-PRIMA
+100GE0/7/0.923(40G)           up      up       STARBUCK-PIK2-TKO
+100GE0/7/0.925(40G)           up      up       STARBUK-BATAVIA
+100GE0/7/0.926(40G)           up      up       STARBUCK
+100GE0/7/0.927(40G)           up      up       NOBU
+100GE0/7/0.928(40G)           up      up       ASTRA-EBONY
+100GE0/7/0.929(40G)           up      up       event-MANDIRI-PAGODA
+100GE0/7/0.930(40G)           up      up       STARBUCK-LAND-ENDS
+100GE0/7/0.932(40G)           up      up       DIPO-INTERNASIONAL-PAHALA-OTOMOTIF
+100GE0/7/0.934(40G)           up      up       BTV-TOWER7-TKO
+100GE0/7/0.935(40G)           up      up       Osteria GIA PIK (Orange Groves PIK 2)
+100GE0/7/0.936(40G)           up      up       PT Kasima Anugrah Nusantara
+100GE0/7/0.937(40G)           up      up       CBN-KASIMA-LINK2
+100GE0/7/0.938(40G)           up      up       PT Euro Super Mobilindo(POP3)
+100GE0/7/0.939(40G)           up      up       BTV-BOD
+100GE0/7/0.940(40G)           up      up       CBN-BTV-RTVJOGLOLL
+100GE0/7/0.941(40G)           up      up       CBN-BTV-TELKOMSATBOGOR
+100GE0/7/0.942(40G)           up      up       QinQ-BTV-centennialtwrll
+100GE0/7/0.943(40G)           up      up       PT.TAMAN_HHIRO-ORANGE-GROVES
+100GE0/7/0.944(40G)           up      up       PT.SUSHI_HIRO-ORANGE-GROVES
+100GE0/7/0.945(40G)           up      up       CBN-INDONET-BANK_INA
+100GE0/7/0.946(40G)           up      up       Palmasia-Cordoba
+100GE0/7/0.947(40G)           up      up       MIDAS
+100GE0/7/0.948(40G)           up      up       CBN NEW
+100GE0/7/0.1040(40G)          up      up       XL-3G-OAM-L1800
+100GE0/7/0.1044(40G)          up      up       XL-3G-OAM-L2100
+100GE0/7/0.1201(40G)          up      up       OFON
+100GE0/7/0.1432(40G)          up      up       CBN-SOHO
+100GE0/7/0.1433(40G)          up      up       SOHO-CBN-PIK2-STARBUCK
+100GE0/7/0.2167(40G)          up      up       BNI&Mandiri
+100GE0/7/0.2168(40G)          up      up       CBN-OFFICE-JMS-via-C1
+100GE0/7/0.3898(40G)          up      up       MATRIX-BROADBAND
+100GE0/7/0.3899(40G)          up      up       MATRIX-TV-NET
+100GE0/7/1(40G)               up      up       to-BB-RTR1-GFI-P55-40G
+Eth-Trunk1                    down    down     to-BB-RTR1-TKO-ETH-TRUNK1-40G
+Eth-Trunk2                    up      up       to-BB-RTR1-FM-ETH-TRUNK2-20G
+Eth-Trunk5                    up      up       to-BB-RTR1-TKO-via-FS-ETH-TRUNK5
+Eth0/0/0                      down    down
+GE0/5/0(10G)                  down    down
+GE0/5/1                       up      up       to-P2P-MIKROTIK-ASG-ETH3-10.119.2.1
+GE0/5/2                       down    down
+GE0/5/3(10G)                  up      up       to-BB-RTR1-TKO-via-FS-ETH-TRUNK5
+GE0/5/4(10G)                  up      up       to-BB-RTR1-FM-P46-ETH-TRUNK2 [RING-A ASG T3,3,4]-[FM T6,C10,11]
+GE0/5/5(10G)                  up      up       to-BB-RTR1-FM-P47-ETH-TRUNK2
+GE0/5/6(10G)                  down    down     to-BB-RTR1-TKO-P44-ETH-TRUNK1
+GE0/5/7(10G)                  down    down     to-BB-RTR1-TKO-P45-ETH-TRUNK1
+GE0/5/8(10G)                  down    down     to-BB-RTR1-TKO-P46-ETH-TRUNK1
+GE0/5/9                       down    down     to-BB-RTR1-TKO-P47-ETH-TRUNK1
+HP-GE15/3/0                   down    down
+HP-GE16/3/0                   down    down
+Loop0                         up      up(s)
+Loop1023                      up      up(s)    DCN loopback interface
+NULL0                         up      up(s)
+VT0                           up      up(s)
+[~JKT-03-1-RTR1-ASG_TOWER-M14]disp
+[~JKT-03-1-RTR1-ASG_TOWER-M14]display curr
+[~JKT-03-1-RTR1-ASG_TOWER-M14]display current-configuration
+!Software Version V800R021C00SPC100
+!Last configuration was updated at 2024-05-16 10:27:01+07:00 by nocjms
+!Last configuration was saved at 2024-05-16 00:00:16+07:00 by nocjms
+#
+clock timezone JKT add 07:00:00
+#
+sysname JKT-03-1-RTR1-ASG_TOWER-M14
+#
+set neid 22cd95
+#
+undo FTP server-source all-interface
+undo FTP ipv6 server-source all-interface
+#
+info-center loghost source LoopBack0
+info-center loghost 10.35.1.11
+#
+service-template template-default0
+#
+service-template template-default1
+#
+service-template template-default2
+#
+service-template template-default3
+#
+service-template template-default4
+#
+ntp-service ipv6 server disable
+ntp-service server source-interface all disable
+ntp-service ipv6 server source-interface all disable
+ntp-service unicast-server 10.35.1.11
+#
+rsa peer-public-key 10.35.1.11
+ public-key-code begin
+ 3082018A
+  02820181
+    009C876F E9C60E96 9085B7D8 C03D165C 3F25895E 5AB34A21 97688132 03BEDF50
+    FCEDBDA3 41BFED14 D0A23287 A160DDA3 277D9D94 D5003A7E C209B3E7 D4C8B039
+    54FAE299 35CA1D74 D8B8E165 90FE2A1E C4361251 593A6792 DEF26E86 D83EC82D
+    F6180F37 668ECAD2 6678681B A2436562 EA1ACDD1 B755A847 FC47FCAF A3FE828A
+    4D703B13 253CB7B3 4A8CC2F8 47102E33 19E114D6 CC950396 61C740D1 AD91F6B4
+    84F6E34F BBB248C5 58540C7C 8DEE3AEE 2B6E8B17 73E456E9 C865A940 7453B650
+    8EDE31EE 55FB8D1F 8D78D1C8 13AC64C2 DECEC22B 69995B0D 8FEBA70F 410C13FF
+    543DC480 41D75185 BC6A044F DED4F2C0 ED0FC8AD 441AB7E8 CC1DD24F 7748BFD5
+    AFC24033 FF589810 547FCA07 270B7F2B 52B97DB6 B1092CEF 43151CC8 27C44626
+    C7017E53 E97F6A07 CA15630B 67C0F21A FD721867 CB5940D9 BE3E90DC 76292A90
+    5224BA9F 4222EDE0 AA938708 A5F681DA DDBDF071 2304F8EF A868DC2A 6650D591
+    3E1F2725 99817F2B 7160DEFB 2B511B05 84FC569E 3C8322D0 2EDADFB8 2071EFE0
+    09
+  0203
+    010001
+ public-key-code end
+ peer-public-key end
+#
+rsa peer-public-key 10.148.1.11
+ public-key-code begin
+ 3082018A
+  02820181
+    00BAE438 F3563058 E89811DF 4180905E CE8E0333 79A770D1 8B82517F 038B572E
+    714F95BB C84D7E41 9DF26537 FE4DA417 33BB7325 9F205408 755527CC 7D246A80
+    26424E23 8C970706 703E1179 2112F15F 5320E4CC AAFA65DF DDF0D1BA B00C6A76
+    59B799D4 77DD1EF7 19BF2F19 E3DC0E0B BF0F3A9D EB2CF6A3 63C0650E B5BBD904
+    5C75E07E 939D6547 A4A0E6DF F3080DC5 759B7B2E 251F5B3B 30597D09 DECFF6C1
+    ED7FA207 0BC141C5 E2FB9E49 AF4C78D2 84CA84E6 9E40B44A B4785383 15CA862B
+    643095EE 0A19F233 791A8318 C112FBD0 31EA304D BF4A4442 6E46310B 0F8046EB
+    031EEFC9 160B2997 84FAA4FF 7672EA48 FDD09879 983B7BC2 A76F5549 C569E0CA
+    B91CD090 16D835F5 824B1626 F45CE939 9E5A8434 14CF1949 1A11AFA8 4CBFE840
+    68032FDC AF768B6B 0C34921E 72242541 B932729E DC4F7CD3 4810350F B4FCCECC
+    170FE4D1 6B1051D8 61C6EFEE B807C485 4DD4B7C0 19E86D35 C21821B5 A82D8F89
+    E538517F 334B714A 8607663E 20A39993 C3C2365B 218867FD A352445A 1B7EBA23
+    B9
+  0203
+    010001
+ public-key-code end
+ peer-public-key end
+#
+undo icmp name timestamp-reply send
+#
+router id 10.148.1.13
+#
+undo telnet ipv6 server enable
+telnet server-source -i LoopBack0
+telnet server-source all-interface
+undo telnet ipv6 server-source all-interface
+#
+diffserv domain default
+#
+diffserv domain 5p3d
+#
+soc
+#
+ip vpn-instance __LOCAL_OAM_VPN__
+ ipv4-family
+ ipv6-family
+#
+ip dcn vpn-instance __dcn_vpn__
+ ipv4-family
+#
+undo radius local-ip all
+#
+bfd
+#
+mpls lsr-id 10.148.1.13
+#
+mpls
+#
+mpls l2vpn
+#
+vsi 1040
+ description XL-3G-OAM-L1800
+ pwsignal ldp
+  vsi-id 1040
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1044
+ description XL-3G-OAM-L2100
+ pwsignal ldp
+  vsi-id 1044
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1201
+ description OFON
+ pwsignal ldp
+  vsi-id 1201
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 123
+ description TEST-QINQ
+ pwsignal ldp
+  vsi-id 123
+  peer 10.148.1.11
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 124
+ description qinq-2
+ pwsignal ldp
+  vsi-id 124
+  peer 10.148.1.11
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1432
+ description CBN-SOHO
+ pwsignal ldp
+  vsi-id 1432
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1433
+ description SOHO-CBN-PIK2-STARBUCK
+ pwsignal ldp
+  vsi-id 1433
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 172
+ description OAM-BACKUP-MIKROTIK-TKO
+ pwsignal ldp
+  vsi-id 172
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 2167
+ description BNI&Mandiri
+ pwsignal ldp
+  vsi-id 2167
+  peer 10.148.1.11
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 2168
+ description CBN-OFFICE-JMS-via-C1
+ pwsignal ldp
+  vsi-id 2168
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 291
+ description RO-MG-CBN
+ pwsignal ldp
+  vsi-id 291
+  peer 10.148.1.11
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3006
+ description TES
+ pwsignal ldp
+  vsi-id 3006
+  peer 10.148.1.11
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 33
+ description OAM-RECTI
+ pwsignal ldp
+  vsi-id 33
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 34
+ description OAM-IBMC
+ pwsignal ldp
+  vsi-id 34
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 35
+ description OAM-NCE
+ pwsignal ldp
+  vsi-id 35
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 36
+ description OAM-ZENICONE
+ pwsignal ldp
+  vsi-id 36
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3898
+ description MATRIX-BROADBAND
+ pwsignal ldp
+  vsi-id 3898
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3899
+ description MATRIX-TV-NET
+ pwsignal ldp
+  vsi-id 3899
+  peer 10.148.1.12
+  peer 10.148.1.15
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 412
+ description XL-4G-L1800
+ pwsignal ldp
+  vsi-id 412
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 413
+ description XL-4G-L2100
+ pwsignal ldp
+  vsi-id 413
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 49
+ description OAM-SW
+ pwsignal ldp
+  vsi-id 49
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 50
+ description OAM-OLT
+ pwsignal ldp
+  vsi-id 50
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 51
+ description OAM-BACKUP
+ pwsignal ldp
+  vsi-id 51
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 561
+ description OAM-ONU
+ pwsignal ldp
+  vsi-id 561
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 709
+#
+vsi 901
+ description CBN-BROADBAND
+ pwsignal ldp
+  vsi-id 901
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 904
+ description SF
+ pwsignal ldp
+  vsi-id 904
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 907
+ description recti
+ pwsignal ldp
+  vsi-id 907
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.16
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 908
+ description CBN-TZUCHI-CLINIC-AKIHABARA
+ pwsignal ldp
+  vsi-id 908
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 911
+ description Sari-Coffee-(Starbucks)
+ pwsignal ldp
+  vsi-id 911
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 912
+ description CBN-KOPKEN
+ pwsignal ldp
+  vsi-id 912
+  peer 10.148.1.12
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 913
+ pwsignal ldp
+  vsi-id 913
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 914
+ description Tzu-Chi-Hospital
+ pwsignal ldp
+  vsi-id 914
+  peer 10.148.1.11
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 915
+ description XL-QINQ
+ pwsignal ldp
+  vsi-id 915
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 916
+ description IOH-CYBER
+ pwsignal ldp
+  vsi-id 916
+  peer 10.148.1.12
+  peer 10.148.1.14
+  peer 10.148.1.15
+  peer 10.148.1.16
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 918
+ description SUBWAY-PIK2-Centerpoints
+ pwsignal ldp
+  vsi-id 918
+  peer 10.148.1.12
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 922
+ description CBN-WAHANA
+ pwsignal ldp
+  vsi-id 922
+  peer 10.148.1.11
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 923
+ description STARBUCK-PIK2-TKO
+ pwsignal ldp
+  vsi-id 923
+  peer 10.148.1.12
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 925
+ pwsignal ldp
+  vsi-id 925
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 926
+ description STARBUCK-BATAVIA-GI
+ pwsignal ldp
+  vsi-id 926
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 927
+ pwsignal ldp
+  vsi-id 927
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 928
+ pwsignal ldp
+  vsi-id 928
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 929
+ pwsignal ldp
+  vsi-id 929
+  peer 10.148.1.14
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 930
+ pwsignal ldp
+  vsi-id 930
+  peer 10.148.1.11
+  peer 10.148.1.14
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 932
+ pwsignal ldp
+  vsi-id 932
+  peer 10.148.1.12
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 934
+ description BTV-TOWER7_TKO
+ pwsignal ldp
+  vsi-id 934
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 935
+ pwsignal ldp
+  vsi-id 935
+  peer 10.148.1.16
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 936
+ pwsignal ldp
+  vsi-id 936
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 937
+ pwsignal ldp
+  vsi-id 937
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 938
+ pwsignal ldp
+  vsi-id 938
+  peer 10.148.1.14
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 939
+ pwsignal ldp
+  vsi-id 939
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 940
+ pwsignal ldp
+  vsi-id 940
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 941
+ pwsignal ldp
+  vsi-id 941
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 942
+ pwsignal ldp
+  vsi-id 942
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 943
+ pwsignal ldp
+  vsi-id 943
+  peer 10.148.1.16
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 944
+ pwsignal ldp
+  vsi-id 944
+  peer 10.148.1.16
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 945
+ description CBN-INDONDET-BANK_INA
+ pwsignal ldp
+  vsi-id 945
+  peer 10.148.1.15
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 946
+ pwsignal ldp
+  vsi-id 946
+  peer 10.148.1.11
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 947
+ pwsignal ldp
+  vsi-id 947
+  peer 10.148.1.14
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 948
+ pwsignal ldp
+  vsi-id 948
+  peer 10.148.1.14
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+mpls ldp
+ #
+ ipv4-family
+#
+mpls ldp remote-peer RTR-FM
+ remote-ip 10.148.1.11
+#
+mpls ldp remote-peer RTR-MMR_GI
+ remote-ip 10.148.1.12
+#
+mpls ldp remote-peer RTR-BBO-POP3
+ remote-ip 10.148.1.17
+#
+mpls ldp remote-peer RTR-PIK2-CENTRUM-POP4
+ remote-ip 10.148.1.14
+#
+mpls ldp remote-peer RTR-OSK
+ remote-ip 10.148.1.16
+#
+mpls ldp remote-peer RTR-TKO
+ remote-ip 10.148.1.15
+#
+mpls ldp remote-peer MMR2
+ remote-ip 10.148.1.19
+#
+dhcp server request-packet all-interface disable
+#
+dot1x-template 1
+#
+security password
+ #
+ rule admin
+  forbidden word changeme_123
+#
+aaa
+ user-password password-force-change disable
+ local-user nocjms password irreversible-cipher $1c${an-/Mh5FE$neI"Yz(.iV}ZX\Xl0eC,XP[i/"WnY6Go-P%)Y\.$$
+ local-user nocjms service-type ftp terminal telnet ssh http
+ local-user nocjms level 3
+ local-user nocjms state block fail-times 3 interval 5
+ local-user root password irreversible-cipher $1c$]f(3Q<j7uS$!0!)8@e`\+lj]vQx\2l&y-$M(|\n_ERFU_BF$!6X$
+ local-user root service-type ssh
+ local-user root state block fail-times 3 interval 5
+ local-user root user-group manage-ug
+ local-user root expire 2000-01-01
+ #
+ authentication-scheme default0
+ #
+ authentication-scheme default1
+ #
+ authentication-scheme default
+  authentication-mode local radius
+ #
+ authorization-scheme default
+ #
+ accounting-scheme default0
+ #
+ accounting-scheme default1
+ #
+ domain default0
+ #
+ domain default1
+ #
+ domain default_admin
+#
+license
+#
+segment-routing
+ bfd enable mode tunnel
+#
+isis 1
+ is-level level-2
+ cost-style wide
+ bfd all-interfaces enable
+ network-entity 48.0001.0000.1014.8113.00
+ is-name ASG_TOWER
+ import-route static
+ default-route-advertise always
+ traffic-eng level-2
+#
+interface Eth-Trunk1
+ mtu 9600
+ description to-BB-RTR1-TKO-ETH-TRUNK1-40G
+ ip address 10.119.2.17 255.255.255.252
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk2
+ mtu 9600
+ description to-BB-RTR1-FM-ETH-TRUNK2-20G
+ ip address 10.119.2.5 255.255.255.252
+ isis enable 1
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk5
+ mtu 9100
+ description to-BB-RTR1-TKO-via-FS-ETH-TRUNK5
+ ip address 10.119.2.61 255.255.255.252
+ isis enable 1
+ isis cost 65000
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Ethernet0/0/0
+ speed auto
+ duplex auto
+ undo shutdown
+ ip binding vpn-instance __LOCAL_OAM_VPN__
+ ip address 192.168.0.1 255.255.255.0
+#
+interface Virtual-Template0
+ ppp authentication-mode auto
+#
+interface GigabitEthernet0/5/0
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/5/1
+ description to-P2P-MIKROTIK-ASG-ETH3-10.119.2.1
+ undo shutdown
+ ip address 10.119.2.2 255.255.255.252
+ dcn
+#
+interface GigabitEthernet0/5/2
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/5/3
+ description to-BB-RTR1-TKO-via-FS-ETH-TRUNK5
+ undo shutdown
+ eth-trunk 5
+ dcn
+#
+interface GigabitEthernet0/5/4
+ description to-BB-RTR1-FM-P46-ETH-TRUNK2 [RING-A ASG T3,3,4]-[FM T6,C10,11]
+ undo shutdown
+ eth-trunk 2
+ dcn
+#
+interface GigabitEthernet0/5/5
+ description to-BB-RTR1-FM-P47-ETH-TRUNK2
+ undo shutdown
+ eth-trunk 2
+ dcn
+#
+interface GigabitEthernet0/5/6
+ description to-BB-RTR1-TKO-P44-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 1
+ dcn
+#
+interface GigabitEthernet0/5/7
+ description to-BB-RTR1-TKO-P45-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 1
+ dcn
+#
+interface GigabitEthernet0/5/8
+ description to-BB-RTR1-TKO-P46-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 1
+ dcn
+#
+interface GigabitEthernet0/5/9
+ description to-BB-RTR1-TKO-P47-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 1
+ dcn
+#
+interface 100GE0/7/0
+ portswitch
+ description to-FB-SW2-ASG_TOWER-100GE0/0/5
+ undo shutdown
+ dcn
+#
+interface 100GE0/7/0.33
+ vlan-type dot1q 33
+ description OAM-recti
+ l2 binding vsi 33
+#
+interface 100GE0/7/0.34
+ vlan-type dot1q 34
+ description OAM-IBMC
+ l2 binding vsi 34
+#
+interface 100GE0/7/0.35
+ vlan-type dot1q 35
+ description OAM-NCE
+ l2 binding vsi 35
+#
+interface 100GE0/7/0.36
+ vlan-type dot1q 36
+ description OAM-ZENICONE
+ l2 binding vsi 36
+#
+interface 100GE0/7/0.49
+ vlan-type dot1q 49
+ description OAM-SW
+ l2 binding vsi 49
+#
+interface 100GE0/7/0.50
+ vlan-type dot1q 50
+ description OAM-OLT
+ l2 binding vsi 50
+#
+interface 100GE0/7/0.51
+ vlan-type dot1q 51
+ description OAM-BACKUP
+ l2 binding vsi 51
+#
+interface 100GE0/7/0.123
+ vlan-type dot1q 123
+ description test-qinq
+ shutdown
+ l2 binding vsi 123
+#
+interface 100GE0/7/0.124
+ vlan-type dot1q 124
+ description qinq2
+ l2 binding vsi 124
+#
+interface 100GE0/7/0.172
+ vlan-type dot1q 172
+ description OAM-BACKUP-MIKROTIK-TKO
+ l2 binding vsi 172
+#
+interface 100GE0/7/0.291
+ vlan-type dot1q 291
+ description RO-MG-CBN
+ l2 binding vsi 291
+#
+interface 100GE0/7/0.412
+ vlan-type dot1q 412
+ description XL-4G-L1800
+ l2 binding vsi 412
+#
+interface 100GE0/7/0.413
+ vlan-type dot1q 413
+ description XL-4G-L2100
+ l2 binding vsi 413
+#
+interface 100GE0/7/0.561
+ vlan-type dot1q 561
+ description OAM-ONU
+ l2 binding vsi 561
+#
+interface 100GE0/7/0.901
+ vlan-type dot1q 901
+ description CBN-BROADBAND
+ l2 binding vsi 901
+#
+interface 100GE0/7/0.904
+ vlan-type dot1q 904
+ description SF
+ l2 binding vsi 904
+#
+interface 100GE0/7/0.905
+#
+interface 100GE0/7/0.907
+ vlan-type dot1q 907
+ description OSAKA-HOTEL
+ l2 binding vsi 907
+#
+interface 100GE0/7/0.908
+ vlan-type dot1q 908
+ description Tzu-Chi-Clinic-AKIHABARA-lt.dasar
+ l2 binding vsi 908
+#
+interface 100GE0/7/0.911
+ vlan-type dot1q 911
+ description Sari-Coffee-(Starbucks)
+ l2 binding vsi 911
+#
+interface 100GE0/7/0.912
+ vlan-type dot1q 912
+ description CBN-KOPKEN
+ l2 binding vsi 912
+#
+interface 100GE0/7/0.913
+ vlan-type dot1q 913
+ description CBN-CAF_Le_Bay
+ l2 binding vsi 913
+#
+interface 100GE0/7/0.914
+ vlan-type dot1q 914
+ description Tzu-Chi-Hospital
+ l2 binding vsi 914
+#
+interface 100GE0/7/0.915
+ vlan-type dot1q 915
+ description XL-QINQ
+ l2 binding vsi 915
+#
+interface 100GE0/7/0.916
+ vlan-type dot1q 916
+ description IOH-CYBER
+ l2 binding vsi 916
+#
+interface 100GE0/7/0.918
+ vlan-type dot1q 918
+ description SUBWAY-PIK2-Centerpoints
+ l2 binding vsi 918
+#
+interface 100GE0/7/0.922
+ vlan-type dot1q 922
+ description WAHANA-PRIMA
+ l2 binding vsi 922
+#
+interface 100GE0/7/0.923
+ vlan-type dot1q 923
+ description STARBUCK-PIK2-TKO
+ l2 binding vsi 923
+#
+interface 100GE0/7/0.925
+ vlan-type dot1q 925
+ description STARBUK-BATAVIA
+ l2 binding vsi 925
+#
+interface 100GE0/7/0.926
+ vlan-type dot1q 926
+ description STARBUCK
+ l2 binding vsi 926
+#
+interface 100GE0/7/0.927
+ vlan-type dot1q 927
+ description NOBU
+ l2 binding vsi 927
+#
+interface 100GE0/7/0.928
+ vlan-type dot1q 928
+ description ASTRA-EBONY
+ l2 binding vsi 928
+#
+interface 100GE0/7/0.929
+ vlan-type dot1q 929
+ description event-MANDIRI-PAGODA
+ l2 binding vsi 929
+#
+interface 100GE0/7/0.930
+ vlan-type dot1q 930
+ description STARBUCK-LAND-ENDS
+ l2 binding vsi 930
+#
+interface 100GE0/7/0.932
+ vlan-type dot1q 932
+ description DIPO-INTERNASIONAL-PAHALA-OTOMOTIF
+ l2 binding vsi 932
+#
+interface 100GE0/7/0.934
+ vlan-type dot1q 934
+ description BTV-TOWER7-TKO
+ l2 binding vsi 934
+#
+interface 100GE0/7/0.935
+ vlan-type dot1q 935
+ description Osteria GIA PIK (Orange Groves PIK 2)
+ l2 binding vsi 935
+#
+interface 100GE0/7/0.936
+ vlan-type dot1q 936
+ description PT Kasima Anugrah Nusantara
+ l2 binding vsi 936
+#
+interface 100GE0/7/0.937
+ vlan-type dot1q 937
+ description CBN-KASIMA-LINK2
+ l2 binding vsi 937
+#
+interface 100GE0/7/0.938
+ vlan-type dot1q 938
+ description PT Euro Super Mobilindo(POP3)
+ l2 binding vsi 938
+#
+interface 100GE0/7/0.939
+ vlan-type dot1q 939
+ description BTV-BOD
+ l2 binding vsi 939
+#
+interface 100GE0/7/0.940
+ vlan-type dot1q 940
+ description CBN-BTV-RTVJOGLOLL
+ l2 binding vsi 940
+#
+interface 100GE0/7/0.941
+ vlan-type dot1q 941
+ description CBN-BTV-TELKOMSATBOGOR
+ l2 binding vsi 941
+#
+interface 100GE0/7/0.942
+ vlan-type dot1q 942
+ description QinQ-BTV-centennialtwrll
+ l2 binding vsi 942
+#
+interface 100GE0/7/0.943
+ vlan-type dot1q 943
+ description PT.TAMAN_HHIRO-ORANGE-GROVES
+ l2 binding vsi 943
+#
+interface 100GE0/7/0.944
+ vlan-type dot1q 944
+ description PT.SUSHI_HIRO-ORANGE-GROVES
+ l2 binding vsi 944
+#
+interface 100GE0/7/0.945
+ vlan-type dot1q 945
+ description CBN-INDONET-BANK_INA
+ l2 binding vsi 945
+#
+interface 100GE0/7/0.946
+ vlan-type dot1q 946
+ description Palmasia-Cordoba
+ l2 binding vsi 946
+#
+interface 100GE0/7/0.947
+ vlan-type dot1q 947
+ description MIDAS
+ l2 binding vsi 947
+#
+interface 100GE0/7/0.948
+ vlan-type dot1q 948
+ description CBN NEW
+ l2 binding vsi 948
+#
+interface 100GE0/7/0.1040
+ vlan-type dot1q 1040
+ description XL-3G-OAM-L1800
+ l2 binding vsi 1040
+#
+interface 100GE0/7/0.1044
+ vlan-type dot1q 1044
+ description XL-3G-OAM-L2100
+ l2 binding vsi 1044
+#
+interface 100GE0/7/0.1201
+ vlan-type dot1q 1201
+ description OFON
+ l2 binding vsi 1201
+#
+interface 100GE0/7/0.1432
+ vlan-type dot1q 1432
+ description CBN-SOHO
+ l2 binding vsi 1432
+#
+interface 100GE0/7/0.1433
+ vlan-type dot1q 1433
+ description SOHO-CBN-PIK2-STARBUCK
+ l2 binding vsi 1433
+#
+interface 100GE0/7/0.2167
+ vlan-type dot1q 2167
+ description BNI&Mandiri
+ l2 binding vsi 2167
+#
+interface 100GE0/7/0.2168
+ vlan-type dot1q 2168
+ description CBN-OFFICE-JMS-via-C1
+ l2 binding vsi 2168
+#
+interface 100GE0/7/0.3898
+ vlan-type dot1q 3898
+ description MATRIX-BROADBAND
+ l2 binding vsi 3898
+#
+interface 100GE0/7/0.3899
+ vlan-type dot1q 3899
+ description MATRIX-TV-NET
+ l2 binding vsi 3899
+#
+interface 100GE0/7/1
+ mtu 9600
+ description to-BB-RTR1-GFI-P55-40G
+ undo shutdown
+ ip address 10.119.2.9 255.255.255.252
+ isis enable 1
+ mpls
+ mpls ldp
+ dcn
+#
+interface HP-GE15/3/0
+ undo shutdown
+#
+interface HP-GE16/3/0
+ undo shutdown
+#
+interface LoopBack0
+ ip address 10.148.1.13 255.255.255.255
+ isis enable 1
+#
+interface LoopBack1023
+ description DCN loopback interface
+ ip binding vpn-instance __dcn_vpn__
+ ip address 128.34.205.149 255.255.0.0
+#
+interface NULL0
+#
+bgp yang-mode enable
+#
+ospf 65534 vpn-instance __dcn_vpn__
+ description DCN ospf create by default
+ opaque-capability enable
+ hostname
+ vpn-instance-capability simple
+ area 0.0.0.0
+  network 0.0.0.0 255.255.255.255
+#
+!The DCN function implements the capability of plug-and-play for this device.
+!A NE IP address based on the unique NE ID is automatically generated in VPN
+!of DCN. It is recommended that the NE IP address be changed to the planned
+!one by running the ne-ip X.X.X.X <MASK> command after the device being online.
+dcn
+#
+ip route-static 0.0.0.0 0.0.0.0 10.119.2.1
+#
+snmp-agent
+snmp-agent local-engineid 800007DB03B0ECDD327EEF
+snmp-agent community write cipher %^%#Owx-T.2T*X\D&JBe_@v($`mmCs>,o!QaK5Ai<'5=ZXq)SG=5}QS_Q!*bz$\)x<b<%>D[F<jd#[~FnY*>%^%# alias __CommunityAliasName_01_24646
+#
+snmp-agent sys-info version all
+snmp-agent target-host host-name __targetHost_1_27234 trap address udp-domain 10.35.1.11 params securityname cipher %^%#y=ri3N|%'N0[:hC]63hHIL\$9N/M2+!uy8C=rQs@]_I6P(H9ZAW3fJ"X,~KA%^%#
+#
+snmp-agent trap source LoopBack0
+#
+snmp-agent protocol source-interface LoopBack0
+snmp-agent protocol source-status all-interface
+undo snmp-agent protocol source-status ipv6 all-interface
+#
+undo snmp-agent proxy protocol source-status all-interface
+undo snmp-agent proxy protocol source-status ipv6 all-interface
+#
+snmp-agent trap enable
+#
+lldp enable
+#
+undo web-auth-server source-ip all
+#
+undo web-auth-server source-ipv6 all
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user nocjms
+ssh user nocjms authentication-type password
+ssh user nocjms service-type snetconf stelnet
+ssh user root
+ssh user root authentication-type password
+ssh user root service-type snetconf stelnet
+ssh server-source -i Ethernet0/0/0
+ssh server-source -i LoopBack0
+ssh server-source -i LoopBack1023
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh authorization-type default aaa
+#
+ssh server cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+ssh server hmac sha2_512 sha2_256
+ssh server key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521
+#
+ssh server publickey ecc rsa rsa_sha2_256 rsa_sha2_512
+#
+ssh server dh-exchange min-len 3072
+#
+ssh client first-time enable
+ssh client peer 10.148.1.11 assign rsa-key 10.148.1.11
+ssh client peer 10.35.1.11 assign rsa-key 10.35.1.11
+#
+ssh client publickey ecc rsa rsa_sha2_256 rsa_sha2_512
+#
+ssh client cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+ssh client hmac sha2_512 sha2_256
+ssh client key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521
+#
+user-interface maximum-vty 21
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher $1c$|9YI<4yIF/${V-^'b4~v&>1Da'/j_w<d_|Q!QS*Y*q,v10'Lc4G$
+#
+user-interface vty 0 4
+ authentication-mode aaa
+#
+netconf
+ activate module huawei-ip
+#
+local-aaa-server
+#
+pm
+ statistics enable
+ pm-server PMS_1035111_2
+  protocol sftp ip-address 10.35.1.11
+  username ftpuser password %^%#&$_=MfM+xUenTWI<{xbOIU9MIlJI1/6N:m&'Y8G%%^%#
+  path ftproot/EMS_2/bulk_statistics101_9/33554449
+ upload-config PMS_1035111_2 server PMS_1035111_2
+#
+evpn source-address 10.148.1.13
+#
+warranty
+#
+l2tp-group default-lac
+ tunnel name HUAWEI
+#
+l2tp-group default-lns
+ tunnel name HUAWEI
+#
+return
+[~JKT-03-1-RTR1-ASG_TOWER-M14]
+
