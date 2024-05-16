@@ -1,0 +1,1105 @@
+login as: NOCJMS
+Keyboard-interactive authentication prompts from server:
+End of keyboard-interactive prompts from server
+Pre-authentication banner message from server:
+|
+| Warning: Negotiated key exchange algorithm is not safe. It is recommended tha
+> t you disable the insecure algorithm or upgrade the client.
+End of banner message from server
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v23.2 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to NOCJMS@10.148.1.15                                  │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✗  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+Info: The max number of VTY users is 21, the number of current VTY users online is 1, and total number of terminal users online is 1.
+      The current login time is 2024-05-16 10:24:17+07:00.
+      The last login time is 2024-05-16 10:23:25+07:00 from 10.119.2.1 through SSH.
+Warning: The password of the root account is the default password. Please change the password.
+<JKT-05-1-RTR1-APT.TOKYO>sy
+<JKT-05-1-RTR1-APT.TOKYO>sys
+Enter system view, return user view with return command.
+[~JKT-05-1-RTR1-APT.TOKYO]disp
+[~JKT-05-1-RTR1-APT.TOKYO]display curr
+[~JKT-05-1-RTR1-APT.TOKYO]display current-configuration-co
+[~JKT-05-1-RTR1-APT.TOKYO]display current-configuration con
+[~JKT-05-1-RTR1-APT.TOKYO]display current-configuration configuration vs
+[~JKT-05-1-RTR1-APT.TOKYO]display current-configuration configuration vsi 172
+#
+vsi 172
+ pwsignal ldp
+  vsi-id 172
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.13
+  peer 10.148.1.14
+  peer 10.148.1.16
+  peer 10.148.1.17
+ mtu 1530
+ encapsulation ethernet
+#
+return
+[~JKT-05-1-RTR1-APT.TOKYO]vsi
+[~JKT-05-1-RTR1-APT.TOKYO]vsi 172
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172]pwsi
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172]pwsignal ldp
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]pee
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]peer 10.148.1.19
+[*JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]peer 10.148.1.18
+[*JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]comm
+[*JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]commit
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]exi
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]exi
+                                      ^
+Error: Unrecognized command found at '^' position.
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]qui
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172-ldp]quit
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172]qui
+[~JKT-05-1-RTR1-APT.TOKYO-vsi-172]quit
+[~JKT-05-1-RTR1-APT.TOKYO]disp
+[~JKT-05-1-RTR1-APT.TOKYO]display curr
+[~JKT-05-1-RTR1-APT.TOKYO]display current-configuration
+!Software Version V800R021C00SPC100
+!Last configuration was updated at 2024-05-16 10:25:20+07:00 by NOCJMS
+!Last configuration was saved at 2024-05-15 23:59:47+07:00 by nocjms
+#
+clock timezone JKT add 07:00:00
+#
+sysname JKT-05-1-RTR1-APT.TOKYO
+#
+set neid 21c133
+#
+undo FTP server-source all-interface
+undo FTP ipv6 server-source all-interface
+#
+service-template template-default0
+#
+service-template template-default1
+#
+service-template template-default2
+#
+service-template template-default3
+#
+service-template template-default4
+#
+ntp-service server disable
+ntp-service ipv6 server disable
+ntp-service server source-interface all disable
+ntp-service ipv6 server source-interface all disable
+ntp-service unicast-server 10.35.1.11
+#
+rsa peer-public-key 10.35.1.11
+ public-key-code begin
+ 3082018A
+  02820181
+    009C876F E9C60E96 9085B7D8 C03D165C 3F25895E 5AB34A21 97688132 03BEDF50
+    FCEDBDA3 41BFED14 D0A23287 A160DDA3 277D9D94 D5003A7E C209B3E7 D4C8B039
+    54FAE299 35CA1D74 D8B8E165 90FE2A1E C4361251 593A6792 DEF26E86 D83EC82D
+    F6180F37 668ECAD2 6678681B A2436562 EA1ACDD1 B755A847 FC47FCAF A3FE828A
+    4D703B13 253CB7B3 4A8CC2F8 47102E33 19E114D6 CC950396 61C740D1 AD91F6B4
+    84F6E34F BBB248C5 58540C7C 8DEE3AEE 2B6E8B17 73E456E9 C865A940 7453B650
+    8EDE31EE 55FB8D1F 8D78D1C8 13AC64C2 DECEC22B 69995B0D 8FEBA70F 410C13FF
+    543DC480 41D75185 BC6A044F DED4F2C0 ED0FC8AD 441AB7E8 CC1DD24F 7748BFD5
+    AFC24033 FF589810 547FCA07 270B7F2B 52B97DB6 B1092CEF 43151CC8 27C44626
+    C7017E53 E97F6A07 CA15630B 67C0F21A FD721867 CB5940D9 BE3E90DC 76292A90
+    5224BA9F 4222EDE0 AA938708 A5F681DA DDBDF071 2304F8EF A868DC2A 6650D591
+    3E1F2725 99817F2B 7160DEFB 2B511B05 84FC569E 3C8322D0 2EDADFB8 2071EFE0
+    09
+  0203
+    010001
+ public-key-code end
+ peer-public-key end
+#
+rsa peer-public-key 10.148.1.16
+ public-key-code begin
+ 3082018A
+  02820181
+    00B94FE0 510B8A04 EAB5B4BC A12A6D5B A9A03095 52B5B241 5CB2A3F2 B334B518
+    AB4EEAF3 63692A88 8E947220 71B5A133 D8EFF2CB 006D57F0 D2C5AC22 41BA7818
+    8A1801F7 FD0F4D39 DB2EB3AA 7120AD81 64583C1E 215DBB53 7189FEFC 9A912743
+    17AF42FF 9903291F 6DE8DDEA C4E27ECB 1D30E910 BABA978E 1F4EA8B2 DD4B091D
+    55EFA714 17A66C88 FDC28CFE D98E32E0 52346759 AEFD25C2 7D05072F 62C4D4CA
+    7EB85074 92E2165F 95FAB54B CA6E870D 09C2A6E0 2F4BE5C4 A3020512 AC9C58AC
+    A8FA309F 8ACDF25A BDF141D8 4592E3CB AE7A69F7 5DCC0370 18CBAA9C CCF02667
+    8A5D6A4D F0BD4BD3 85909F42 7FA68C8E C2153128 EDDD4638 60C4F52D 6A14FB31
+    4002CA5B 49169A8A A73FC960 5B3C4A66 13888CF0 ED689845 0982EA06 6AB11BCF
+    ADBAB079 DE0FE998 1A7F2EB7 16923322 C396D36E CCB96319 24A8C49D 653AD6EF
+    BCEC55F5 670DC2A7 8262EDFD 3B431005 F3CF3F75 2FB580AB 6BB29428 8D7F7C30
+    6F5FA0B2 7290FA4F AC3F50AC 6077AB0F B3B43482 8AC5A0C3 0F84CCF8 40D1C32F
+    1D
+  0203
+    010001
+ public-key-code end
+ peer-public-key end
+#
+undo icmp name timestamp-reply send
+#
+router id 10.148.1.15
+#
+telnet server-source all-interface
+telnet ipv6 server-source all-interface
+#
+diffserv domain default
+#
+diffserv domain 5p3d
+#
+soc
+#
+ip vpn-instance __LOCAL_OAM_VPN__
+ ipv4-family
+ ipv6-family
+#
+ip dcn vpn-instance __dcn_vpn__
+ ipv4-family
+#
+undo radius local-ip all
+#
+bfd
+#
+mpls lsr-id 10.148.1.15
+#
+mpls
+ mpls te
+ mpls rsvp-te
+ mpls te cspf
+#
+mpls l2vpn
+#
+vsi 1040
+ description XL-3G-OAM-L1800
+ pwsignal ldp
+  vsi-id 1040
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1044
+ description XL-3G-OAM-L2100
+ pwsignal ldp
+  vsi-id 1044
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 110
+ description C1-INET-JMS
+ pwsignal ldp
+  vsi-id 110
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1201
+ description OFON
+ pwsignal ldp
+  vsi-id 1201
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 1432
+ description CBN-SOHO
+ pwsignal ldp
+  vsi-id 1432
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 172
+ pwsignal ldp
+  vsi-id 172
+  peer 10.148.1.11
+  peer 10.148.1.12
+  peer 10.148.1.13
+  peer 10.148.1.14
+  peer 10.148.1.16
+  peer 10.148.1.17
+  peer 10.148.1.18
+  peer 10.148.1.19
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 2721
+ description C1-BROADBAND
+ pwsignal ldp
+  vsi-id 2721
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 2722
+ description C1-IPTV
+ pwsignal ldp
+  vsi-id 2722
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3252
+ description ARTHA
+ pwsignal ldp
+  vsi-id 3252
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 33
+ description OAM-RECTI
+ pwsignal ldp
+  vsi-id 33
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 34
+ description OAM-IBMC
+ pwsignal ldp
+  vsi-id 34
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 35
+ description OAM-NCE
+ pwsignal ldp
+  vsi-id 35
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3898
+ description MATRIX-BROADBAND
+ pwsignal ldp
+  vsi-id 3898
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 3899
+ description MATRIX-TV-NET
+ pwsignal ldp
+  vsi-id 3899
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 412
+ description XL-4G-L1800
+ pwsignal ldp
+  vsi-id 412
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 413
+ description XL-4G-L2100
+ pwsignal ldp
+  vsi-id 413
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 49
+ description OAM-SW
+ pwsignal ldp
+  vsi-id 49
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 50
+ description OAM-OLT
+ pwsignal ldp
+  vsi-id 50
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 701
+ description C2110012928-C1-DEFECT-TWR1
+ pwsignal ldp
+  vsi-id 701
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 703
+ description C2110013928-C1-POM_TOKYO
+ pwsignal ldp
+  vsi-id 703
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 705
+ description C2201093201-C1-TOKYO-HUB
+ pwsignal ldp
+  vsi-id 705
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 707
+ description C2205322205-C1-MBM_TOKYO_HUB-10M
+ pwsignal ldp
+  vsi-id 707
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 718
+ description C2308478308-C1-HAWKER-10M
+ pwsignal ldp
+  vsi-id 718
+  peer 10.148.1.12
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 81
+ pwsignal ldp
+  vsi-id 81
+  peer 10.148.1.12
+  peer 10.148.1.14
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 901
+ description CBN-BROADBAND
+ pwsignal ldp
+  vsi-id 901
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 908
+ description CBN-TZUCHI-CLINIC-AKIHABARA
+ pwsignal ldp
+  vsi-id 908
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 911
+ description Sari-Coffee-(Starbucks)
+ pwsignal ldp
+  vsi-id 911
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 912
+ description CBN-KOPKEN
+ pwsignal ldp
+  vsi-id 912
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 916
+ description IOH-MCP
+ pwsignal ldp
+  vsi-id 916
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 927
+ pwsignal ldp
+  vsi-id 927
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 934
+ pwsignal ldp
+  vsi-id 934
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 939
+ pwsignal ldp
+  vsi-id 939
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 940
+ description cbn-btv-telkomsatbogorll
+ pwsignal ldp
+  vsi-id 940
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 941
+ pwsignal ldp
+  vsi-id 941
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 942
+ pwsignal ldp
+  vsi-id 942
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+vsi 945
+ description CBN-INDONDET-BANK_INA
+ pwsignal ldp
+  vsi-id 945
+  peer 10.148.1.13
+ mtu 1530
+ encapsulation ethernet
+#
+mpls ldp
+ #
+ ipv4-family
+#
+mpls ldp remote-peer RTR-ASG
+ remote-ip 10.148.1.13
+#
+mpls ldp remote-peer RTR-MMR1-GI
+ remote-ip 10.148.1.12
+#
+mpls ldp remote-peer rtr-POP4
+ remote-ip 10.148.1.14
+#
+mpls ldp remote-peer pop3
+ remote-ip 10.148.1.17
+#
+dhcp server request-packet all-interface disable
+#
+dot1x-template 1
+#
+security password
+ #
+ rule admin
+  forbidden word changeme_123
+#
+aaa
+ user-password password-force-change disable
+ local-user nocjms password irreversible-cipher $1c$So7yTfJ4c+$-2kx4L{wzYMO>L3e,n#*G}}9G;~ES.vcGy#;<,/~$
+ local-user nocjms service-type ftp telnet ssh
+ local-user nocjms level 3
+ local-user nocjms state block fail-times 3 interval 5
+ local-user root password irreversible-cipher $1c$]f(3Q<j7uS$!0!)8@e`\+lj]vQx\2l&y-$M(|\n_ERFU_BF$!6X$
+ local-user root service-type ssh
+ local-user root state block fail-times 3 interval 5
+ local-user root user-group manage-ug
+ local-user root expire 2000-01-01
+ #
+ authentication-scheme default0
+ #
+ authentication-scheme default1
+ #
+ authentication-scheme default
+  authentication-mode local radius
+ #
+ authorization-scheme default
+ #
+ accounting-scheme default0
+ #
+ accounting-scheme default1
+ #
+ domain default0
+ #
+ domain default1
+ #
+ domain default_admin
+#
+license
+ active port-basic slot 1 card 1 port 0-55
+#
+isis 1
+ cost-style wide
+ bfd all-interfaces enable
+ network-entity 48.0001.0000.1014.8115.00
+ is-name Apt.Tokyo
+ traffic-eng level-1-2
+#
+interface Eth-Trunk2
+#
+interface Eth-Trunk3
+ mtu 9600
+ description to-JKT-06-1-RTR1-OSK-ETH-TRUNK2
+ ip address 10.119.2.29 255.255.255.252
+ isis enable 1
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk4
+ mtu 9600
+ description to-JKT-10-1-RTR1-PIK2_CENTRUM-ETH-TRUNK1
+ ip address 10.119.2.33 255.255.255.252
+ isis enable 1
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk5
+ mtu 9100
+ description to-RTR-ASG-via-FS
+ ip address 10.119.2.62 255.255.255.252
+ isis enable 1
+ isis cost 65000
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk6
+ description to-SW
+ mode lacp-static
+ max active-linknumber 8
+ mpls
+ mpls ldp
+#
+interface Eth-Trunk6.33
+ vlan-type dot1q 33
+ description OAM-RECTI
+ l2 binding vsi 33
+#
+interface Eth-Trunk6.34
+ vlan-type dot1q 34
+ description OAM-IBMC
+ l2 binding vsi 34
+#
+interface Eth-Trunk6.35
+ vlan-type dot1q 35
+ description OAM-NCE
+ l2 binding vsi 35
+#
+interface Eth-Trunk6.49
+ vlan-type dot1q 49
+ description OAM-SW
+ l2 binding vsi 49
+#
+interface Eth-Trunk6.50
+ vlan-type dot1q 50
+ description OAM-OLT
+ l2 binding vsi 50
+#
+interface Eth-Trunk6.81
+ vlan-type dot1q 81
+ description JMS-PPPOE
+ l2 binding vsi 81
+#
+interface Eth-Trunk6.110
+ vlan-type dot1q 110
+ description C1-INET-JMS
+ l2 binding vsi 110
+#
+interface Eth-Trunk6.172
+ vlan-type dot1q 172
+ description OAM-TKO
+ l2 binding vsi 172
+#
+interface Eth-Trunk6.412
+ vlan-type dot1q 412
+ description XL-4G-L1800
+ l2 binding vsi 412
+#
+interface Eth-Trunk6.413
+ vlan-type dot1q 413
+ description XL-4G-L2100
+ l2 binding vsi 413
+#
+interface Eth-Trunk6.701
+ vlan-type dot1q 701
+ description C2110012928-C1-DEFECT-TWR1
+ l2 binding vsi 701
+#
+interface Eth-Trunk6.703
+ vlan-type dot1q 703
+ description C2110013928-C1-POM_TOKYO
+ l2 binding vsi 703
+#
+interface Eth-Trunk6.705
+ vlan-type dot1q 705
+ description C2201093201-C1-TOKYO-HUB
+ l2 binding vsi 705
+#
+interface Eth-Trunk6.707
+ vlan-type dot1q 707
+ description C2205322205-C1-MBM_TOKYO_HUB-10M
+ l2 binding vsi 707
+#
+interface Eth-Trunk6.718
+ vlan-type dot1q 718
+ description C2308478308-C1-HAWKER-10M
+ l2 binding vsi 718
+#
+interface Eth-Trunk6.901
+ vlan-type dot1q 901
+ description CBN-BROADBAND
+ l2 binding vsi 901
+#
+interface Eth-Trunk6.908
+ vlan-type dot1q 908
+ description CBN-TZUCHI-CLINIC-AKIHABARA
+ l2 binding vsi 908
+#
+interface Eth-Trunk6.911
+ vlan-type dot1q 911
+ description CBN-STARBUCKS
+ l2 binding vsi 911
+#
+interface Eth-Trunk6.912
+ vlan-type dot1q 912
+ description CBN-KOPKEN
+ l2 binding vsi 912
+#
+interface Eth-Trunk6.916
+ vlan-type dot1q 916
+ description IOH-MCP
+ l2 binding vsi 916
+#
+interface Eth-Trunk6.927
+ vlan-type dot1q 927
+ description NOBU-via-FS
+ l2 binding vsi 927
+#
+interface Eth-Trunk6.934
+ vlan-type dot1q 934
+ description BTV-TOWER7
+ l2 binding vsi 934
+#
+interface Eth-Trunk6.939
+ vlan-type dot1q 939
+ description BTV-BOD
+ l2 binding vsi 939
+#
+interface Eth-Trunk6.940
+ vlan-type dot1q 940
+ description CBN-BTV-RTVJOGLOLL
+ l2 binding vsi 940
+#
+interface Eth-Trunk6.941
+ vlan-type dot1q 941
+ description CBN-BTV-TELKOMSATBOGOR
+ l2 binding vsi 941
+#
+interface Eth-Trunk6.942
+ vlan-type dot1q 942
+ l2 binding vsi 942
+#
+interface Eth-Trunk6.945
+ vlan-type dot1q 945
+ description CBN-INDONET-BANK_INA
+ l2 binding vsi 945
+#
+interface Eth-Trunk6.1040
+ vlan-type dot1q 1040
+ description XL-3G-OAM-L1800
+ l2 binding vsi 1040
+#
+interface Eth-Trunk6.1044
+ vlan-type dot1q 1044
+ description XL-3G-OAM-L2100
+ l2 binding vsi 1044
+#
+interface Eth-Trunk6.1201
+ vlan-type dot1q 1201
+ description OFON
+ l2 binding vsi 1201
+#
+interface Eth-Trunk6.1432
+ vlan-type dot1q 1432
+ description CBN-SOHO
+ l2 binding vsi 1432
+#
+interface Eth-Trunk6.2721
+ vlan-type dot1q 2721
+ description C1-BROADBAND
+ l2 binding vsi 2721
+#
+interface Eth-Trunk6.2722
+ vlan-type dot1q 2722
+ description C1-IPTV
+ l2 binding vsi 2722
+#
+interface Eth-Trunk6.3252
+ vlan-type dot1q 3252
+ description ARTHA
+ l2 binding vsi 3252
+#
+interface Eth-Trunk6.3898
+ vlan-type dot1q 3898
+ description MATRIX-BROADBAND
+ l2 binding vsi 3898
+#
+interface Eth-Trunk6.3899
+ vlan-type dot1q 3899
+ description MATRIX-BUSINESS
+ l2 binding vsi 3899
+#
+interface Virtual-Template0
+ ppp authentication-mode auto
+#
+interface GigabitEthernet0/0/0
+ speed auto
+ duplex auto
+ undo shutdown
+ ip binding vpn-instance __LOCAL_OAM_VPN__
+ ip address 192.168.0.1 255.255.255.0
+#
+interface GigabitEthernet0/1/0
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/1
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/2
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/3
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/4
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/5
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/6
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/7
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/8
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/9
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/10
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/11
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/12
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/13
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/14
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/15
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/16
+ description to-RECTI-10.33.1.17
+ undo shutdown
+ l2 binding vsi 33
+ dcn
+#
+interface GigabitEthernet0/1/17
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/18
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/19
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/20
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/21
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/22
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/23
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/24
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/25
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/26
+ undo shutdown
+ dcn
+#
+interface GigabitEthernet0/1/27
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/28
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/29
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/30
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/31
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/32
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/33
+ description to-FB-SW1-APT.TOKYO-P15-ETH-TRUNK6
+ undo shutdown
+ eth-trunk 6
+ dcn
+#
+interface 25GE0/1/34
+ description to-FB-SW1-APT.TOKYO-P17-ETH-TRUNK6
+ undo shutdown
+ eth-trunk 6
+ dcn
+#
+interface 25GE0/1/35
+ description to-RTR-ASG-via-FS
+ undo shutdown
+ eth-trunk 5
+ dcn
+#
+interface 25GE0/1/36
+ description to-JKT-10-1-RTR1-PIK2_CENTRUM-P46-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 4
+ dcn
+#
+interface 25GE0/1/37
+ description to-JKT-10-1-RTR1-PIK2_CENTRUM-P47-ETH-TRUNK1
+ undo shutdown
+ eth-trunk 4
+ dcn
+#
+interface 25GE0/1/38
+ description to-JKT-06-1-RTR1-OSK-P44-ETH-TRUNK2[T3,C31-32]
+ undo shutdown
+ eth-trunk 3
+ dcn
+#
+interface 25GE0/1/39
+ description to-JKT-06-1-RTR1-OSK-P45-ETH-TRUNK2[T3,C27-28]
+ undo shutdown
+ eth-trunk 3
+ dcn
+#
+interface 25GE0/1/40
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/41
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/42
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/43
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/44
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/45
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/46
+ undo shutdown
+ dcn
+#
+interface 25GE0/1/47
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/48
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/49
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/50
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/51
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/52
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/53
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/54
+ undo shutdown
+ dcn
+#
+interface 100GE0/1/55
+ undo shutdown
+ dcn
+#
+interface LoopBack0
+ ip address 10.148.1.15 255.255.255.255
+ isis enable 1
+#
+interface LoopBack1023
+ description DCN loopback interface
+ ip binding vpn-instance __dcn_vpn__
+ ip address 128.33.193.51 255.255.0.0
+#
+interface NULL0
+#
+ospf 65534 vpn-instance __dcn_vpn__
+ description DCN ospf create by default
+ opaque-capability enable
+ hostname
+ vpn-instance-capability simple
+ area 0.0.0.0
+  network 0.0.0.0 255.255.255.255
+#
+!The DCN function implements the capability of plug-and-play for this device.
+!A NE IP address based on the unique NE ID is automatically generated in VPN
+!of DCN. It is recommended that the NE IP address be changed to the planned
+!one by running the ne-ip X.X.X.X <MASK> command after the device being online.
+dcn
+#
+snmp-agent
+snmp-agent local-engineid 800007DB039CB2E864EC6F
+snmp-agent community write cipher %^%#M16|(nZUs<mY0-!s|[A"aaZy%hUqgX'.2D~xq(8$3knx,~rjSH"R<T4]":WQj(I_Vq#7'AI,x"0x70`X%^%# alias __CommunityAliasName_01_18907
+#
+snmp-agent sys-info version all
+snmp-agent target-host host-name __targetHost_1_45319 trap address udp-domain 10.35.1.11 params securityname cipher %^%#x]hP/<.t\B<viw#zVV3Azc\{O))wE5bL=<#xcID,Qu_:-Lh3D5XKxwMs!cN;%^%#
+#
+snmp-agent trap source LoopBack0
+#
+snmp-agent protocol source-interface LoopBack0
+snmp-agent protocol source-status all-interface
+undo snmp-agent protocol source-status ipv6 all-interface
+#
+undo snmp-agent proxy protocol source-status all-interface
+undo snmp-agent proxy protocol source-status ipv6 all-interface
+#
+snmp-agent trap enable
+#
+lldp enable
+#
+undo web-auth-server source-ip all
+#
+undo web-auth-server source-ipv6 all
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user nocjms
+ssh user nocjms authentication-type password
+ssh user nocjms service-type all
+ssh user root
+ssh user root authentication-type password
+ssh user root service-type snetconf stelnet
+ssh server-source -i GigabitEthernet0/0/0
+ssh server-source -i LoopBack0
+ssh server-source -i LoopBack1023
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh authorization-type default aaa
+#
+ssh server cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+ssh server hmac sha2_512 sha2_256
+ssh server key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521
+#
+ssh server publickey ecc rsa rsa_sha2_256 rsa_sha2_512
+#
+ssh server dh-exchange min-len 3072
+#
+ssh client first-time enable
+ssh client peer 10.35.1.11 assign rsa-key 10.35.1.11
+sftp client-source -i LoopBack0
+#
+ssh client publickey ecc rsa rsa_sha2_256 rsa_sha2_512
+#
+ssh client cipher aes256_gcm aes128_gcm aes256_ctr aes192_ctr aes128_ctr
+ssh client hmac sha2_512 sha2_256
+ssh client key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521
+#
+user-interface maximum-vty 21
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher $1c$yHb;::GPf)$=,c]U@A:$I~Xe`~1+G>>\@~p"*mi~LY`KeD1AS`,$
+#
+user-interface vty 0 4
+ authentication-mode aaa
+#
+netconf
+ activate module huawei-ip
+#
+local-aaa-server
+#
+warranty
+#
+l2tp-group default-lac
+ tunnel name HUAWEI
+#
+l2tp-group default-lns
+ tunnel name HUAWEI
+#
+return
+[~JKT-05-1-RTR1-APT.TOKYO]
+
